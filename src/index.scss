@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #ef4540;
+$secondary-color: #16161d;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: $font-stack;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.navbar {
+	background-color: $secondary-color;
+
+	.menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo a {
+		color: #fff;
+		font-size: 2rem;
+	}
+
+	ul {
+		list-style-type: none;
+		overflow: hidden;
+		background-color: $secondary-color;
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+	}
+
+	li a.current::before {
+		content: '';
+		background-color: #ef4540;
+		position: absolute;
+		top: 65px;
+		height: 3px;
+		width: 50px;
+	}
+
+	li a:before {
+		content: '';
+		background-color: #ef4540;
+		position: absolute;
+		top: 65px;
+		height: 3px;
+		width: 0px;
+		transition: width 0.3s ease-out;
+	}
+
+	li a:hover::before {
+		content: '';
+		background-color: #ef4540;
+		position: absolute;
+		top: 65px;
+		height: 3px;
+		width: 50px;
+	}
+}
