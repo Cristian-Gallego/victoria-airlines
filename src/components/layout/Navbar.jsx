@@ -1,9 +1,12 @@
+import LogoIcon from '../../assets/logo.svg';
+
 function Navbar() {
 	return (
 		<nav className="navbar">
 			<div className="container">
 				<div className="menu">
 					<div className="logo">
+						<img src={LogoIcon} width="35px" height="35px" alt="logo" />
 						<a href="/">Victoria Airlines</a>
 					</div>
 					<div className="navbar-menu">

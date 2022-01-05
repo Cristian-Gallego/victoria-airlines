@@ -12,26 +12,35 @@ $secondary-color: #16161d;
 	font-family: $font-stack;
 }
 
+body {
+	background-color: #fafafa;
+}
+
 .container {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 }
 
+// Navbar -----
 .navbar {
 	background-color: $secondary-color;
 
 	.menu {
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		display: flex;
 		align-items: center;
 	}
 
 	.logo a {
 		color: #fff;
 		font-size: 2rem;
+		margin: 0 20px;
 	}
 
 	ul {
@@ -82,3 +91,145 @@ $secondary-color: #16161d;
 		width: 50px;
 	}
 }
+
+// Booking -----
+.booking-container {
+	padding: 20px;
+	max-width: 900px;
+	margin: auto;
+
+	.booking {
+		.locations {
+			padding: 20px 0;
+			display: flex;
+			justify-content: space-between;
+			.booking-from,
+			.booking-to {
+				label {
+					font-size: 0.8rem;
+				}
+
+				.booking-from-box,
+				.booking-to-box {
+					border: 1px solid #ccc;
+					box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+						0 2px 4px 1px rgba(0, 0, 0, 0.2);
+					width: 300px;
+
+					input {
+						border: none;
+						width: 100%;
+						height: 100%;
+						padding: 10px;
+						outline: none;
+						font-size: 1rem;
+					}
+
+					hr {
+						position: relative;
+						top: 2px;
+						width: 95%;
+						margin: auto;
+						height: 1px;
+						background-color: #ccc;
+						border: none;
+					}
+
+					ul li {
+						list-style: none;
+						padding: 10px;
+						cursor: pointer;
+						font-size: 1rem;
+					}
+
+					ul li:hover {
+						background-color: #eee;
+					}
+				}
+			}
+		}
+
+		.dates {
+			padding: 20px 0;
+			display: flex;
+			justify-content: space-between;
+
+			.departure-date,
+			.return-date {
+				border: 1px solid #ccc;
+				box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+					0 2px 4px 1px rgba(0, 0, 0, 0.2);
+				width: 300px;
+				height: 40px;
+				outline: none;
+				font-size: 1rem;
+				padding: 10px;
+			}
+		}
+		.options {
+			padding: 20px 0;
+			display: flex;
+			justify-content: flex-start;
+
+			.use-miles,
+			.one-way {
+				display: flex;
+				padding-right: 20px;
+			}
+
+			input[type='checkbox'] {
+				-webkit-appearance: none;
+				appearance: none;
+				background-color: #fff;
+				margin-right: 10px;
+				width: 1.5em;
+				height: 1.5em;
+				border: 0.15em solid #ccc;
+				border-radius: 0.15em;
+				transform: translateY(-0.075em);
+				cursor: pointer;
+				display: grid;
+				place-content: center;
+			}
+			input[type='checkbox']::before {
+				content: '';
+				width: 1em;
+				height: 1em;
+				transform: scale(0);
+				box-shadow: inset 1em 1em $primary-color;
+				transform-origin: bottom left;
+				clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+				//clip-path: polygon(9% 49%, 39% 79%, 80% 18%, 87% 22%, 40% 92%, 4% 57%);
+			}
+
+			input[type='checkbox']:checked::before {
+				transform: scale(1);
+			}
+		}
+
+		.search-flights {
+			background-color: $primary-color;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100px;
+			height: 40px;
+			color: #fff;
+			cursor: pointer;
+		}
+		.search-flights:hover {
+			background-color: #d83940;
+		}
+		.search-flights:active {
+			transform: scale(0.98);
+		}
+	}
+
+	.lower-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+// HomePromo -----
