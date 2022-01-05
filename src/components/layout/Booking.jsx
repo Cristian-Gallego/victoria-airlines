@@ -11,22 +11,24 @@ function Booking() {
 						<BookingTo />
 					</div>
 					<div className="dates">
-						<label htmlFor="departure">
+						<div>
+							<label htmlFor="departure">Departure date:</label>
 							<input
 								className="departure-date"
 								type="date"
 								name="departure"
 								placeholder="Departure Date"
 							/>
-						</label>
-						<label htmlFor="return">
+						</div>
+						<div>
+							<label htmlFor="return">Return date:</label>
 							<input
 								className="departure-date"
 								type="date"
 								name="return"
 								placeholder="Return Date"
 							/>
-						</label>
+						</div>
 					</div>
 					<div className="lower-row">
 						<div className="options">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 $font-stack: 'Montserrat', sans-serif;
 $primary-color: #ef4540;
@@ -154,6 +154,10 @@ body {
 			display: flex;
 			justify-content: space-between;
 
+			label {
+				font-size: 0.8rem;
+			}
+
 			.departure-date,
 			.return-date {
 				border: 1px solid #ccc;
@@ -164,6 +168,7 @@ body {
 				outline: none;
 				font-size: 1rem;
 				padding: 10px;
+				display: flex;
 			}
 		}
 		.options {
@@ -191,15 +196,14 @@ body {
 				display: grid;
 				place-content: center;
 			}
+
 			input[type='checkbox']::before {
 				content: '';
-				width: 1em;
-				height: 1em;
+				width: 12px;
+				height: 12px;
 				transform: scale(0);
-				box-shadow: inset 1em 1em $primary-color;
-				transform-origin: bottom left;
+				box-shadow: inset 12px 12px $primary-color;
 				clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-				//clip-path: polygon(9% 49%, 39% 79%, 80% 18%, 87% 22%, 40% 92%, 4% 57%);
 			}
 
 			input[type='checkbox']:checked::before {
@@ -234,7 +238,33 @@ body {
 
 // HomePromo -----
 .home-promo {
-	height: 60vh;
+	height: 80vh;
+	background-image: url('./assets/images/promo-1.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	h2 {
+		padding: 100px 0 40px;
+		font-size: 4rem;
+		color: $primary-color;
+		font-weight: 700;
+	}
+
+	button {
+		background-color: $primary-color;
+		border: none;
+		border-radius: 5px;
+		padding: 10px;
+		width: 200px;
+		height: 60px;
+		cursor: pointer;
+
+		a {
+			color: #fff;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+	}
 }
 
 // Footer -----
