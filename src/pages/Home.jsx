@@ -1,5 +1,5 @@
 import Booking from '../components/layout/Booking';
-import HomePromo from '../components/HomePromo';
+import HomePromo from '../components/layout/HomePromo';
 
 function Home() {
 	return (

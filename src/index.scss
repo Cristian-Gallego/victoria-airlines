@@ -233,3 +233,66 @@ body {
 }
 
 // HomePromo -----
+.home-promo {
+	height: 60vh;
+}
+
+// Footer -----
+.footer {
+	background-color: $secondary-color;
+	padding: 50px;
+
+	.links {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 0 70px;
+
+		h3 {
+			color: $primary-color;
+
+			font-weight: 400;
+			padding: 20px 0;
+		}
+
+		li {
+			list-style-type: none;
+			padding: 5px 0;
+		}
+
+		a {
+			color: #fff;
+		}
+
+		a:hover {
+			color: #ccc;
+		}
+	}
+
+	hr {
+		height: 1px;
+		background-color: #555;
+		border: none;
+	}
+
+	.copyright {
+		padding: 30px 0 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.icons {
+		display: flex;
+		align-items: center;
+	}
+
+	.github-icon,
+	.linkedin-icon {
+		margin: 0 4px;
+	}
+
+	small {
+		font-size: 0.7rem;
+		color: #fff;
+	}
+}
