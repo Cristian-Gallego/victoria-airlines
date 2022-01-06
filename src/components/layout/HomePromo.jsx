@@ -8,9 +8,9 @@ function HomePromo() {
 					with Victoria Airlines
 				</h2>
 
-				<button>
-					<a href="/">Book a flight</a>
-				</button>
+				<a className="btn" href="/">
+					Book a flight
+				</a>
 			</div>
 		</section>
 	);

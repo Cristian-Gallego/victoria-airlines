@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import LogoIcon from '../../assets/icons/logo.svg';
 
 function Navbar() {
@@ -12,18 +13,29 @@ function Navbar() {
 					<div className="navbar-menu">
 						<ul>
 							<li>
-								<a className="current" href="/Settings">
+								<Link to="/" className="current link">
+									Home
+								</Link>
+							</li>
+							<li>
+								<Link to="/book" className="link">
 									Book
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="/About">About</a>
+								<Link to="/about" className="link">
+									About
+								</Link>
 							</li>
 							<li>
-								<a href="/About">Login</a>
+								<Link to="/sign-up" className="link">
+									Sign Up
+								</Link>
 							</li>
 							<li>
-								<a href="/About">Sing Up</a>
+								<Link to="/sign-in" className="link">
+									Sign In
+								</Link>
 							</li>
 						</ul>
 					</div>

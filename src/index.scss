@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
+@mixin btn {
+	display: inline-block;
+	background-color: $primary-color;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding: 20px 30px;
+
+	&:hover {
+		background-color: #d83940;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+}
+
 $font-stack: 'Montserrat', sans-serif;
 $primary-color: #ef4540;
 $secondary-color: #16161d;
@@ -56,25 +76,25 @@ body {
 		float: left;
 	}
 
-	li a {
+	li .link {
 		display: block;
 		color: white;
 		text-align: center;
 		padding: 14px 16px;
 	}
 
-	li a.current::before {
+	li .link.current::before {
 		content: '';
-		background-color: #ef4540;
+		background-color: $primary-color;
 		position: absolute;
 		top: 65px;
 		height: 3px;
 		width: 50px;
 	}
 
-	li a:before {
+	li .link:before {
 		content: '';
-		background-color: #ef4540;
+		background-color: $primary-color;
 		position: absolute;
 		top: 65px;
 		height: 3px;
@@ -82,9 +102,9 @@ body {
 		transition: width 0.3s ease-out;
 	}
 
-	li a:hover::before {
+	li .link:hover::before {
 		content: '';
-		background-color: #ef4540;
+		background-color: $primary-color;
 		position: absolute;
 		top: 65px;
 		height: 3px;
@@ -244,26 +264,34 @@ body {
 	background-repeat: no-repeat;
 
 	h2 {
-		padding: 100px 0 40px;
-		font-size: 4rem;
+		padding: 100px 0 50px;
+		font-size: 3.5rem;
 		color: $primary-color;
 		font-weight: 700;
 	}
 
-	button {
-		background-color: $primary-color;
-		border: none;
-		border-radius: 5px;
-		padding: 10px;
-		width: 200px;
-		height: 60px;
-		cursor: pointer;
+	a {
+		@include btn;
+	}
+}
 
-		a {
-			color: #fff;
-			font-size: 1rem;
-			font-weight: 600;
-		}
+// Not Found -----
+.not-found {
+	padding: 100px;
+	height: 50vh;
+
+	h2 {
+		font-size: 2rem;
+		padding: 0 0 20px;
+	}
+
+	p {
+		font-size: 1.2rem;
+		padding: 0 0 100px;
+	}
+
+	a {
+		@include btn;
 	}
 }
 
