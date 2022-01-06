@@ -1,0 +1,30 @@
+@mixin btn {
+	display: inline-block;
+	background-color: $primary-color;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+
+	&:hover {
+		background-color: #d83940;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+}
+
+.btn-lg {
+	@include btn;
+	padding: 20px 30px;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.btn-md {
+	@include btn;
+	padding: 10px 15px;
+	font-size: 1rem;
+	font-weight: 400;
+}

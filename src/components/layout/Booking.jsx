@@ -42,11 +42,7 @@ function Booking() {
 								<label htmlFor="use-miles">Use Victoria Miles</label>
 							</div>
 						</div>
-						<input
-							type="submit"
-							className="search-flights"
-							value="Continue"
-						></input>
+						<input type="submit" className="btn-md" value="Continue"></input>
 					</div>
 				</form>
 			</div>

@@ -1,0 +1,15 @@
+// Variables
+@import './_variables';
+
+// Base layout
+@import './_base';
+
+// Components
+@import './components/_button';
+
+// Layout
+@import './layout/navbar';
+@import './layout/booking';
+@import './layout/homePromo';
+@import './layout/notFound';
+@import './layout/footer';

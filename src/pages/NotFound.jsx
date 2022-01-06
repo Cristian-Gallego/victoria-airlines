@@ -7,7 +7,9 @@ function NotFound() {
 					Unfortunately, it seems the page you were looking for doesn't exist
 					anymore.
 				</p>
-				<a href="/">Go Home</a>
+				<a className="btn-lg" href="/">
+					Go Home
+				</a>
 			</div>
 		</section>
 	);
