@@ -32,12 +32,11 @@ function Booking() {
 					</div>
 					<div className="lower-row">
 						<div className="options">
-							<div className="one-way">
+							<div className="checkbox">
 								<input type="checkbox" name="one-way" />
 								<label htmlFor="one-way">One-way</label>
 							</div>
-
-							<div className="use-miles">
+							<div className="checkbox">
 								<input type="checkbox" name="use-miles" />
 								<label htmlFor="use-miles">Use Victoria Miles</label>
 							</div>
