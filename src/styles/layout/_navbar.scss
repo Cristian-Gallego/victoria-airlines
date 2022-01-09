@@ -3,7 +3,6 @@
 
 	.menu {
 		display: flex;
-		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -13,18 +12,18 @@
 		align-items: center;
 
 		a {
-			color: #fff;
-			font-size: 2rem;
 			margin: 0 20px;
+			font-size: 2rem;
+			color: #fff;
 		}
 	}
 
 	ul {
-		overflow: hidden;
-		background-color: $secondary-color;
-		padding: 20px;
 		display: flex;
 		justify-content: space-between;
+		padding: 20px;
+		overflow: hidden;
+		background-color: $secondary-color;
 	}
 
 	li {
@@ -32,37 +31,37 @@
 
 		.link {
 			display: block;
-			color: white;
 			text-align: center;
 			padding: 14px 16px;
+			color: white;
 		}
 
 		.link.current::before {
 			content: '';
-			background-color: $primary-color;
 			position: absolute;
 			top: 65px;
-			height: 3px;
 			width: 50px;
+			height: 3px;
+			background-color: $primary-color;
 		}
 
 		.link:before {
 			content: '';
-			background-color: $primary-color;
 			position: absolute;
 			top: 65px;
-			height: 3px;
 			width: 0px;
+			height: 3px;
+			background-color: $primary-color;
 			transition: width 0.3s ease-out;
 		}
 
 		.link:hover::before {
 			content: '';
-			background-color: $primary-color;
 			position: absolute;
 			top: 65px;
-			height: 3px;
 			width: 50px;
+			height: 3px;
+			background-color: $primary-color;
 		}
 	}
 }

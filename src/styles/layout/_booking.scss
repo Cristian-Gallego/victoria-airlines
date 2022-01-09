@@ -1,13 +1,13 @@
 .booking-container {
-	padding: 20px;
 	max-width: 900px;
+	padding: 20px;
 	margin: auto;
 
 	.booking {
 		.locations {
-			padding: 20px 0;
 			display: flex;
 			justify-content: space-between;
+			padding: 20px 0;
 
 			.booking-from,
 			.booking-to {
@@ -17,16 +17,16 @@
 
 				.booking-from-box,
 				.booking-to-box {
+					width: 300px;
 					border: 1px solid #ccc;
 					box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
 						0 2px 4px 1px rgba(0, 0, 0, 0.2);
-					width: 300px;
 
 					input {
-						border: none;
 						width: 100%;
 						height: 100%;
 						padding: 10px;
+						border: none;
 						outline: none;
 						font-size: 1rem;
 					}
@@ -35,16 +35,16 @@
 						position: relative;
 						top: 2px;
 						width: 95%;
-						margin: auto;
 						height: 1px;
-						background-color: #ccc;
+						margin: auto;
 						border: none;
+						background-color: #ccc;
 					}
 
 					li {
 						padding: 10px;
-						cursor: pointer;
 						font-size: 1rem;
+						cursor: pointer;
 
 						&:hover {
 							background-color: #eee;
@@ -55,9 +55,9 @@
 		}
 
 		.dates {
-			padding: 20px 0;
 			display: flex;
 			justify-content: space-between;
+			padding: 20px 0;
 
 			label {
 				font-size: 0.8rem;
@@ -65,22 +65,22 @@
 
 			.departure-date,
 			.return-date {
+				display: flex;
+				width: 300px;
+				height: 40px;
+				padding: 10px;
 				border: 1px solid #ccc;
 				box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
 					0 2px 4px 1px rgba(0, 0, 0, 0.2);
-				width: 300px;
-				height: 40px;
-				outline: none;
 				font-size: 1rem;
-				padding: 10px;
-				display: flex;
+				outline: none;
 			}
 		}
 
 		.options {
-			padding: 20px 0;
 			display: flex;
 			justify-content: flex-start;
+			padding: 20px 0;
 
 			.use-miles,
 			.one-way {
@@ -89,18 +89,18 @@
 			}
 
 			input[type='checkbox'] {
-				-webkit-appearance: none;
-				appearance: none;
-				background-color: #fff;
-				margin-right: 10px;
-				width: 1.5em;
-				height: 1.5em;
-				border: 0.15em solid #ccc;
-				border-radius: 0.15em;
-				transform: translateY(-0.075em);
-				cursor: pointer;
 				display: grid;
 				place-content: center;
+				width: 1.5em;
+				height: 1.5em;
+				margin-right: 10px;
+				border: 0.15em solid #ccc;
+				border-radius: 0.15em;
+				appearance: none;
+				background-color: #fff;
+				transform: translateY(-0.075em);
+				-webkit-appearance: none;
+				cursor: pointer;
 
 				&::before {
 					content: '';
