@@ -13,27 +13,27 @@ function Navbar() {
 					<div className="navbar-menu">
 						<ul>
 							<li>
-								<Link to="/" className="current link">
+								<Link to="/" className="current link home-size">
 									Home
 								</Link>
 							</li>
 							<li>
-								<Link to="/book" className="link">
+								<Link to="/book" className="link book-size">
 									Book
 								</Link>
 							</li>
 							<li>
-								<Link to="/about" className="link">
+								<Link to="/about" className="link about-size">
 									About
 								</Link>
 							</li>
 							<li>
-								<Link to="/sign-up" className="link">
+								<Link to="/sign-up" className="link sign-up-size">
 									Sign Up
 								</Link>
 							</li>
 							<li>
-								<Link to="/sign-in" className="link">
+								<Link to="/sign-in" className="link sign-in-size">
 									Sign In
 								</Link>
 							</li>

@@ -36,15 +36,6 @@
 			color: white;
 		}
 
-		.link.current::before {
-			content: '';
-			position: absolute;
-			top: 65px;
-			width: 50px;
-			height: 3px;
-			background-color: $primary-color;
-		}
-
 		.link:before {
 			content: '';
 			position: absolute;
@@ -55,13 +46,34 @@
 			transition: width 0.3s ease-out;
 		}
 
-		.link:hover::before {
+		.link:hover::before,
+		.link.current::before {
 			content: '';
 			position: absolute;
 			top: 65px;
-			width: 50px;
 			height: 3px;
 			background-color: $primary-color;
+		}
+
+		.home-size:hover::before,
+		.home-size.current::before {
+			width: 52px;
+		}
+		.book-size:hover::before,
+		.book-size.current::before {
+			width: 43px;
+		}
+		.about-size:hover::before,
+		.about-size.current::before {
+			width: 50px;
+		}
+		.sign-up-size:hover::before,
+		.sign-up-size.current::before {
+			width: 65px;
+		}
+		.sign-in-size:hover::before,
+		.sign-in-size.current::before {
+			width: 57px;
 		}
 	}
 }
