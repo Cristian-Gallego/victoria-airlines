@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import GithubIcon from '../../assets/icons/github.svg';
 import LinkedInIcon from '../../assets/icons/linkedin.svg';
 
@@ -10,22 +12,35 @@ function Footer() {
 						<h3>About Victoria Airlines</h3>
 						<ul>
 							<li>
-								<a href="/">About Us</a>
+								<Link to="/about" className="footer-link">
+									About
+								</Link>
 							</li>
 							<li>
-								<a href="/">Careers</a>
+								<Link to="/victoria-miles" className="footer-link">
+									Victoria Miles
+								</Link>
+							</li>
+							<li>
+								<Link to="/careers" className="footer-link">
+									Careers
+								</Link>
 							</li>
 						</ul>
 					</div>
 
-					<div className="info">
+					<div className="information">
 						<h3>Useful Information</h3>
 						<ul>
 							<li>
-								<a href="/">Destinations</a>
+								<Link to="/destinations" className="footer-link">
+									Destinations
+								</Link>
 							</li>
 							<li>
-								<a href="/">Sitemap</a>
+								<Link to="/sitemap" className="footer-link">
+									Sitemap
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -34,10 +49,14 @@ function Footer() {
 						<h3>Customer Support</h3>
 						<ul>
 							<li>
-								<a href="/">FAQ / Help</a>
+								<Link to="/faq" className="footer-link">
+									FAQ / Help
+								</Link>
 							</li>
 							<li>
-								<a href="/">Refunds / Compensation</a>
+								<Link to="/refunds" className="footer-link">
+									Refunds / Compensation
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -46,13 +65,19 @@ function Footer() {
 						<h3>Legal</h3>
 						<ul>
 							<li>
-								<a href="/">Legal notice</a>
+								<Link to="/legal-notice" className="footer-link">
+									Legal Notice
+								</Link>
 							</li>
 							<li>
-								<a href="/">Terms of use</a>
+								<Link to="/terms-of-use" className="footer-link">
+									Terms of Use
+								</Link>
 							</li>
 							<li>
-								<a href="/">Cookie Policy </a>
+								<Link to="/privacy-policy" className="footer-link">
+									Privacy Policy
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -62,20 +87,24 @@ function Footer() {
 					<small>Designed & Developed by Cristian Gallego</small>
 					<small>&copy; 2022 - Victoria Airlines</small>
 					<div className="icons">
-						<img
-							src={GithubIcon}
-							width="25px"
-							height="25px"
-							alt="github"
-							className="github-icon"
-						/>
-						<img
-							src={LinkedInIcon}
-							width="20px"
-							height="20px"
-							alt="github"
-							className="linkedin-icon"
-						/>
+						<a href="https://github.com/" target="_blank" rel="noreferrer">
+							<img
+								src={GithubIcon}
+								width="25px"
+								height="25px"
+								alt="github"
+								className="github-icon"
+							/>
+						</a>
+						<a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+							<img
+								src={LinkedInIcon}
+								width="20px"
+								height="20px"
+								alt="github"
+								className="linkedin-icon"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>

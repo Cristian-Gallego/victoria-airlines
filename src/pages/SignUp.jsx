@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function SignUp() {
@@ -107,11 +108,18 @@ function SignUp() {
 							className="checkbox"
 						/>
 						<label htmlFor="terms">
-							I agree to the terms and conditions of the Victoria Miles
-							programme and privacy policy.
+							I agree to the terms and conditions of the&nbsp;
+							<Link to="/victoria-miles">
+								<span className="conditions-link">Victoria Miles</span>
+							</Link>
+							&nbsp;programme and&nbsp;
+							<Link to="/privacy-policy">
+								<span className="conditions-link">privacy policy</span>
+							</Link>
+							.
 						</label>
 					</div>
-					<input type="submit" className="btn-md" value="Continue"></input>
+					<input type="submit" className="btn-md" value="Register"></input>
 				</form>
 			</div>
 		</div>

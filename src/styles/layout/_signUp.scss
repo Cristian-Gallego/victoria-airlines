@@ -50,6 +50,16 @@ h2 {
 			width: 280px;
 			color: #888;
 		}
+
+		.conditions-link {
+			color: #888;
+			text-decoration: underline;
+
+			&:hover {
+				color: $primary-color;
+				text-decoration: none;
+			}
+		}
 	}
 
 	.btn-md {
