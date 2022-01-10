@@ -39,7 +39,7 @@ function SignUp() {
 	return (
 		<div className="sign-up">
 			<div className="container">
-				<h2>Create your Account</h2>
+				<h2>Create an Account</h2>
 				<form className="form" autoComplete="off" onSubmit={onSubmit}>
 					<div
 						className={`form-section ${
@@ -100,6 +100,7 @@ function SignUp() {
 							Password
 						</label>
 					</div>
+
 					<div className="options">
 						<input
 							type="checkbox"

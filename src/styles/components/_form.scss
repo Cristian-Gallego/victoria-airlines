@@ -1,3 +1,65 @@
+// Form inputs
+.form {
+	.form-section {
+		padding: 20px 0;
+		border: none;
+		outline: none;
+		font-size: 1rem;
+		position: relative;
+
+		.form-control {
+			width: 300px;
+			height: 50px;
+			padding: 20px;
+			border: 1px solid #bbb;
+			outline: none;
+			font-size: 1rem;
+		}
+
+		.form-label {
+			position: absolute;
+			top: 35px;
+			left: 20px;
+			color: #888;
+			transition: all 0.1s ease-in-out;
+		}
+	}
+
+	.form-section.active {
+		.form-label {
+			transform: translate(-20px, -30px);
+			font-size: 0.7rem;
+		}
+	}
+
+	.options {
+		display: flex;
+		justify-content: flex-start;
+		padding: 20px 0;
+		font-size: 0.8rem;
+
+		label {
+			width: 280px;
+			color: #888;
+		}
+
+		.conditions-link {
+			color: #888;
+			text-decoration: underline;
+
+			&:hover {
+				color: $primary-color;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.btn-md {
+		margin-top: 25px;
+	}
+}
+
+// Checkboxes
 .checkbox {
 	display: flex;
 }
