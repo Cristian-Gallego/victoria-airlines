@@ -33,14 +33,27 @@ function BookingFrom() {
 		setText(text);
 	};
 
+	const onKeyPress = (text, e) => {
+		if (e.charCode === 13) {
+			setSuggestions([]);
+			setText(text);
+		}
+	};
+
 	const renderSuggestions = () => {
 		if (suggestions.length === 0) {
 			return null;
 		}
+
 		return (
 			<ul>
 				{suggestions.map((city) => (
-					<li key={city} onClick={() => suggestionsSelected(city)}>
+					<li
+						key={city}
+						onClick={() => suggestionsSelected(city)}
+						tabIndex="0"
+						onKeyPress={(e) => onKeyPress(city, e)}
+					>
 						{city}
 					</li>
 				))}
